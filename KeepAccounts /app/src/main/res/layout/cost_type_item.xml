@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="40dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/typedata_civ"
+        android:layout_width="30dp"
+        android:layout_margin="5dp"
+        android:layout_height="30dp"
+        android:background="#ddd"/>
+    <TextView
+        android:id="@+id/typedata_tv"
+        android:layout_width="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="购物"/>
+</LinearLayout>

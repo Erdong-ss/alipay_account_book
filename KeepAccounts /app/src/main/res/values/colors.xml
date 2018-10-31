@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="activtyBackground">#1f2233</color>
+    <color name="textcolor">#fff</color>
+    <color name="smalltextcolor">#757578</color>
+    <color name="backfround">#d0d0d0</color>
+    <color name="selectedcolor">#000</color>
+    <color name="tabbackcolor">#4a4b56</color>
+    <color name="tabselectedbak">#fff</color>
+    <color name="recordeColor">#2e8bbf</color>
+    <color name="buttonPressed">#a39f9f</color>
+    <color name="addoneBackcolor">#edebeb</color>
+</resources>

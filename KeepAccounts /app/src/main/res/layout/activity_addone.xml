@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddoneActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/addonetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+       <Button
+           android:layout_width="20dp"
+           android:onClick="returnMain"
+           android:layout_height="20dp"
+           android:background="@mipmap/back"/>
+        <TextView
+            android:onClick="choiceType"
+            android:id="@+id/typetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text=" 支出"/>
+    </android.support.v7.widget.Toolbar>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/databtn"
+           android:layout_width="0dp"
+           android:layout_height="30dp"
+           android:background="@drawable/button_shape"
+           android:textSize="12dp"
+           android:layout_margin="5dp"
+           android:layout_weight="1"
+           android:text="10-07"/>
+       <Button
+           android:id="@+id/notebtn"
+           android:layout_width="0dp"
+           android:layout_height="30dp"
+           android:textSize="12dp"
+           android:background="@drawable/button_shape"
+           android:layout_margin="5dp"
+           android:layout_weight="1"
+           android:text="备注"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="30dp"
+           android:background="@drawable/button_shape"
+           android:textSize="12dp"
+           android:layout_margin="5dp"
+           android:layout_weight="1"
+           android:text="选择账户"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:visibility="invisible"
+           android:text="10-07"/>
+   </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/costType_rv"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+    <!--通过设置graviety  为right 或 end  从右往左显示文本-->
+    <EditText
+        android:id="@+id/edittext"
+        android:backgroundTint="@color/addoneBackcolor"
+        android:background="@color/addoneBackcolor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="8"
+        android:focusable="false"
+        android:text="0"
+        android:gravity="right|center_vertical"
+        android:inputType="numberDecimal"
+        android:drawableRight="@mipmap/cha"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/addoneBackcolor"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="4"
+            >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/button_shape"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_rowWeight="1"
+                android:background="@drawable/button_shape"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btndian"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_shape"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_columnSpan="2"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_shape"
+                android:text="0" />
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/addoneBackcolor"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btndelete"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@mipmap/deleteico"
+                 />
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/recordeColor"
+                android:text="完成" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
